@@ -82,7 +82,7 @@ const fa: Profile = {
   terminalLine: "Chatra create-something-memorable --with=care True",
   heroHeadline: ["میسازیم", "همانطور که", "باید ساخت"],
   googleIndexDescription:
-    "تجربه و رزومه قوی در طراحی و اجرای سیستم ها و پلتفرم های مختلف |fullstack PWA NestjS NextJS Postgres ORM ReactJS ts | فول استک جاوااسکریپت",
+    " تجربه و رزومه قوی در طراحی و اجرای سیستم ها و پلتفرم های مختلف |fullstack PWA NestjS NextJS Postgres ORM ReactJS ts | فول استک جاوااسکریپت",
   heroSubtext:
     "توی مسیر full stack developer ای قدم گذاشتم و به همراه و کمک تیمم یعنی چتراتک اثرات با ارزش و مهندسی شده ای به جا گذاشتیم و در تلاشیم توی همین فرمون کارمون رو ادامه بدیم.",
   about: {
