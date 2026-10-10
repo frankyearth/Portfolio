@@ -50,15 +50,50 @@ export const viewport: Viewport = {
 };
 
 export default function FaRootLayout({ children }: { children: React.ReactNode }) {
-  const personJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: profile.name,
-    jobTitle: profile.role,
-    url: siteUrl,
-    email: `mailto:${profile.contact.email}`,
-    sameAs: [profile.contact.github],
-  };
+  // ساختار اسکیمای پیشرفته شامل Person و ProfilePage برای درک بهتر موتورهای جستجو
+  const schemaData = {
+    
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://heydariamir.ir/#person",
+      "name": "امیر محمد حیدری خوئی",
+      "jobTitle": "Full Stack Developer",
+      "image": "https://heydariamir.ir/path-to-your-photo.jpg",
+      "url": "https://heydariamir.ir",
+      "sameAs": [
+        "https://github.com/MrDiOXiD",
+        "https://www.linkedin.com/in/chatra-tech-team/"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "ChatraTech",
+        "url": "https://chatratech.ir" 
+      },
+      "description": "توسعه‌دهنده فول‌استک و متخصص در معماری میکروسرویس، Nest.js و TypeScript.",
+      "knowsAbout": ["TypeScript", "Nest.js", "Microservices", "PostgreSQL", "React.js", "PWA"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://heydariamir.ir/#website",
+      "url": "https://heydariamir.ir",
+      "name": "سایت شخصی امیر محمد حیدری",
+      "publisher": { "@id": "https://heydariamir.ir/#person" }
+    }
+  ]
+}
+
+   //export default function FaRootLayout({ children }: { children: React.ReactNode }) {
+   // const personJsonLd = {
+   // "@context": "https://schema.org",
+   //"@type": "Person",
+   // name: profile.name,
+   // jobTitle: profile.role,
+   // url: siteUrl,
+   // email: `mailto:${profile.contact.email}`,
+   // sameAs: [profile.contact.github],
+   //};
 
   return (
     <html lang="fa" dir="rtl" className={`${vazirmatn.variable} ${jetbrainsMono.variable}`}>
