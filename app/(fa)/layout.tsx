@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: `${profile.name} — ${profile.role}`,
   description: profile.googleIndexDescription,
-  keywords: [profile.name, profile.role, "Next.js", "Full-Stack Developer", "پورتفولیو", "توسعه‌دهنده فول‌استک", "NestJs", "typescript", "javascript", "امیر محمد حیدری", "امیر حیدری", "برنامه نویس", "طراح وب"],
+  keywords: [profile.name, profile.role, "Next.js", "Full-Stack Developer", "پورتفولیو", "توسعه‌دهنده فول‌استک", "NestJs", "typescript", "javascript", "امیر محمد حیدری", "امیر حیدری", "برنامه نویس", "طراح وب","طراح سایت","برنامه نویس سایت"],
   alternates: {
     canonical: "/",
     languages: { "fa-IR": "/", en: "/en", "x-default": "/" },
@@ -60,7 +60,7 @@ export default function FaRootLayout({ children }: { children: React.ReactNode }
       "@id": "https://heydariamir.ir/#person",
       "name": "امیر محمد حیدری خوئی",
       "jobTitle": "Full Stack Developer",
-      "image": "https://heydariamir.ir/path-to-your-photo.jpg",
+      "image": "https://github.com/MrDiOXiD/Portfolio/blob/main/public/images/profile.webp",
       "url": "https://heydariamir.ir",
       "sameAs": [
         "https://github.com/MrDiOXiD",
